@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact page with an accessible, keyboard-friendly form." />
+    <meta name="author" content="KARTHIKA" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contact — KARTHIKA</title>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header" role="banner">
+        <div class="container header-inner">
+          <a class="brand" href="index.html">KARTHIKA</a>
+          <button class="mobile-menu-button" aria-controls="site-navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="hamburger" aria-hidden="true"></span>
+          </button>
+          <nav id="site-navigation" class="site-navigation" role="navigation" aria-label="Primary">
+            <ul class="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <button class="theme-toggle" type="button" aria-pressed="false">
+            <span class="theme-icon" aria-hidden="true">☀</span>
+            <span>Dark mode</span>
+          </button>
+        </div>
+      </header>
+
+      <main class="site-main">
+        <section class="section section-hero" aria-labelledby="contact-heading">
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <p class="eyebrow">Contact</p>
+              <h1 id="contact-heading">Let's work together on your next portfolio.</h1>
+              <p class="lead">Send a message with your project details and I’ll respond with a plan for a responsive, accessible site.</p>
+            </div>
+            <div class="hero-panel hero-panel-alt">
+              <div class="hero-chip">Contact form</div>
+              <p>Use the form below to share your goals. I reply quickly with a clear, user-friendly build proposal.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section form-section" aria-labelledby="form-heading">
+          <div class="container contact-form-grid">
+            <div class="contact-form-card">
+              <div class="section-header">
+                <h2 id="form-heading">Send a message</h2>
+                <p>All fields are required. I’ll respond within one business day.</p>
+              </div>
+              <form id="contactForm" class="contact-form" action="#" method="post" novalidate>
+                <div id="form-status" aria-live="polite" role="status" class="sr-only"></div>
+                <div class="form-grid">
+                  <label class="form-group" for="name">
+                    <span>Name</span>
+                    <input id="name" name="name" type="text" required autocomplete="name" />
+                  </label>
+                  <label class="form-group" for="email">
+                    <span>Email</span>
+                    <input id="email" name="email" type="email" required autocomplete="email" />
+                  </label>
+                </div>
+                <label class="form-group" for="message">
+                  <span>Message</span>
+                  <textarea id="message" name="message" rows="6" required></textarea>
+                </label>
+                <p class="form-note">Use the Tab key to move through fields. Your input is guided by accessibility standards.</p>
+                <button class="button button-primary" type="submit">Send message</button>
+              </form>
+            </div>
+            <aside class="contact-help-card">
+              <h3>Quick details</h3>
+              <p>Need help with responsive layout, semantic markup, or dark mode theming? Share your brief and I’ll propose an accessible portfolio solution.</p>
+              <div class="contact-buttons">
+                <a class="button button-secondary" href="mailto:hello@example.com">Email me</a>
+                <a class="button button-secondary" href="index.html">Back home</a>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" role="contentinfo">
+        <div class="container footer-grid">
+          <p>© 2026 KARTHIKA — Reach out for accessible, modern websites.</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>

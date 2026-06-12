@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn about my background, skills, and approach to accessible web development." />
+    <meta name="author" content="KARTHIKA" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>About — KARTHIKA</title>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header" role="banner">
+        <div class="container header-inner">
+          <a class="brand" href="index.html">KARTHIKA</a>
+          <button class="mobile-menu-button" aria-controls="site-navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="hamburger" aria-hidden="true"></span>
+          </button>
+          <nav id="site-navigation" class="site-navigation" role="navigation" aria-label="Primary">
+            <ul class="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a class="active" href="about.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <button class="theme-toggle" type="button" aria-pressed="false">
+            <span class="theme-icon" aria-hidden="true">☀</span>
+            <span>Dark mode</span>
+          </button>
+        </div>
+      </header>
 
+      <main class="site-main">
+        <section class="section section-hero" aria-labelledby="about-heading">
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <p class="eyebrow">About me</p>
+              <h1 id="about-heading">I build modern websites with performance and accessibility at the center.</h1>
+              <p class="lead">My goal is to craft experiences that feel intuitive on every device, with semantic structure, responsive layouts, and clean interface patterns.</p>
+            </div>
+            <div class="hero-panel hero-panel-alt">
+              <div class="hero-chip">Crafted for the web</div>
+              <p>Every project is built with meaningful HTML, scalable CSS, and flexible interface components that prioritize people first.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section skills-section" aria-labelledby="skills-heading">
+          <div class="container">
+            <div class="section-header">
+              <p class="eyebrow">Core skills</p>
+              <h2 id="skills-heading">The technology and design systems I use</h2>
+            </div>
+            <div class="skill-list">
+              <article class="skill-card">
+                <h3>Semantic HTML</h3>
+                <p>Markup that communicates structure and supports accessibility.</p>
+              </article>
+              <article class="skill-card">
+                <h3>Responsive CSS</h3>
+                <p>Mobile-first breakpoints with Grid and Flexbox layouts.</p>
+              </article>
+              <article class="skill-card">
+                <h3>Accessible UX</h3>
+                <p>Keyboard interactions, focus states, and readable visual contrast.</p>
+              </article>
+              <article class="skill-card">
+                <h3>Design systems</h3>
+                <p>Consistent spacing, typography, and reusable UI components.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section workflow-section" aria-labelledby="workflow-heading">
+          <div class="container">
+            <div class="section-header">
+              <p class="eyebrow">Workflow</p>
+              <h2 id="workflow-heading">How I turn ideas into polished websites</h2>
+            </div>
+            <div class="workflow-grid">
+              <article class="workflow-card">
+                <strong>Plan</strong>
+                <p>Identify goals, content priorities, and accessibility requirements.</p>
+              </article>
+              <article class="workflow-card">
+                <strong>Build</strong>
+                <p>Structure semantic pages, build responsive layout systems, and refine interactions.</p>
+              </article>
+              <article class="workflow-card">
+                <strong>Validate</strong>
+                <p>Test performance, keyboard navigation, and responsive behavior across devices.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" role="contentinfo">
+        <div class="container footer-grid">
+          <p>© 2026 KARTHIKA — Simple, accessible web experiences.</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>

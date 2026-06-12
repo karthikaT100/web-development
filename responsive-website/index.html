@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Semantic portfolio with modern CSS Grid, Flexbox, and responsive theming." />
+    <meta name="keywords" content="portfolio, responsive, CSS Grid, Flexbox, accessibility, theme toggle" />
+    <meta name="author" content="KARTHIKA" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>KARTHIKA — Semantic Portfolio</title>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header" role="banner">
+        <div class="container header-inner">
+          <a class="brand" href="index.html">KARTHIKA</a>
+          <button class="mobile-menu-button" aria-controls="site-navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="hamburger" aria-hidden="true"></span>
+          </button>
+          <nav id="site-navigation" class="site-navigation" role="navigation" aria-label="Primary">
+            <ul class="nav-list">
+              <li><a class="active" href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <button class="theme-toggle" type="button" aria-pressed="false">
+            <span class="theme-icon" aria-hidden="true">☀</span>
+            <span>Dark mode</span>
+          </button>
+        </div>
+      </header>
+
+      <main class="site-main">
+        <section class="section section-hero" aria-labelledby="hero-heading">
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <p class="eyebrow">Advanced CSS3 & responsive architecture</p>
+              <h1 id="hero-heading">A modern semantic portfolio built with Grid, Flexbox, and responsive theme support.</h1>
+              <p class="lead">I create polished portfolio experiences that adapt beautifully across mobile, tablet, and desktop using semantic HTML, dynamic layout patterns, and a light/dark theme toggle.</p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="#projects">View projects</a>
+                <a class="button button-secondary" href="#contact">Contact me</a>
+              </div>
+            </div>
+            <div class="hero-panel">
+              <div class="hero-chip">Responsive Portfolio</div>
+              <div class="hero-panel-copy">
+                <p class="hero-label">Due Date</p>
+                <strong>15 Jun 2026</strong>
+              </div>
+              <p>Transform your semantic portfolio into a visually stunning, fully responsive design using modern CSS architecture.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section about-section" aria-labelledby="about-heading">
+          <div class="container about-grid">
+            <div>
+              <p class="eyebrow">About me</p>
+              <h2 id="about-heading">Designing accessible experiences with modern CSS.</h2>
+              <p class="lead">I combine semantic structure with layout systems like Grid and Flexbox to build portfolio websites that are fast, scalable, and comfortable to use on every device.</p>
+            </div>
+            <div class="stats-grid">
+              <div class="stat-card">
+                <span>5+</span>
+                <p>Years building responsive websites</p>
+              </div>
+              <div class="stat-card">
+                <span>20+</span>
+                <p>Accessible UI components</p>
+              </div>
+              <div class="stat-card">
+                <span>100%</span>
+                <p>Mobile-first page support</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section skills-section" aria-labelledby="skills-heading">
+          <div class="container">
+            <div class="section-header">
+              <p class="eyebrow">Skills</p>
+              <h2 id="skills-heading">Core tools and techniques</h2>
+            </div>
+            <div class="skill-list">
+              <article class="skill-card">
+                <h3>CSS Grid Layout</h3>
+                <p>Two-dimensional page architecture for complex section placement.</p>
+              </article>
+              <article class="skill-card">
+                <h3>Flexbox Interfaces</h3>
+                <p>Component-level alignment for navigation, cards, and buttons.</p>
+              </article>
+              <article class="skill-card">
+                <h3>Responsive Media Queries</h3>
+                <p>Mobile-first breakpoints that adapt layout from 320px to 1440px.</p>
+              </article>
+              <article class="skill-card">
+                <h3>Theme Variables</h3>
+                <p>Dynamic light/dark mode using custom properties and a simple toggle.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="section projects-section" aria-labelledby="projects-heading">
+          <div class="container">
+            <div class="section-header">
+              <p class="eyebrow">Projects</p>
+              <h2 id="projects-heading">Selected portfolio work</h2>
+            </div>
+            <div class="project-list">
+              <article class="project-card">
+                <div class="project-card-top">
+                  <span class="project-tag">Grid</span>
+                  <p>Landing page design</p>
+                </div>
+                <h3>Semantic portfolio redesign</h3>
+                <p>A modern interface structured with CSS Grid and clean typography.</p>
+              </article>
+              <article class="project-card">
+                <div class="project-card-top">
+                  <span class="project-tag">Flexbox</span>
+                  <p>Component alignment</p>
+                </div>
+                <h3>Component-driven showcase</h3>
+                <p>Flexible UI cards, buttons, and navigation that adapt across breakpoints.</p>
+              </article>
+              <article class="project-card">
+                <div class="project-card-top">
+                  <span class="project-tag">Themes</span>
+                  <p>Light/dark mode</p>
+                </div>
+                <h3>Dynamic theme toggles</h3>
+                <p>Custom properties power a smooth switch between bright and dark palettes.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+          <div class="container contact-grid">
+            <div class="contact-copy">
+              <p class="eyebrow">Contact</p>
+              <h2 id="contact-heading">Ready to launch your next portfolio?</h2>
+              <p class="lead">If you have a project brief, let's talk. I build responsive portfolio experiences using semantic HTML, modern CSS, and accessible UI patterns.</p>
+              <div class="contact-actions">
+                <a class="button button-primary" href="contact.html">Send a message</a>
+                <a class="button button-secondary" href="portfolio.html">View work</a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <h3>Need a modern website?</h3>
+              <p>Let's create a portfolio that looks great, performs well, and feels confident across all device sizes.</p>
+              <div class="contact-details">
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:hello@example.com">hello@example.com</a>
+                </div>
+                <div>
+                  <strong>Location</strong>
+                  <span>Remote / Anywhere</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" role="contentinfo">
+        <div class="container footer-grid">
+          <p>© 2026 KARTHIKA. Built with modern CSS Grid, Flexbox, and accessible design.</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>

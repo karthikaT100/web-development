@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of accessible web projects built with semantic HTML and modern UX principles." />
+    <meta name="author" content="KARTHIKA" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio — KARTHIKA</title>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header" role="banner">
+        <div class="container header-inner">
+          <a class="brand" href="index.html">KARTHIKA</a>
+          <button class="mobile-menu-button" aria-controls="site-navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="hamburger" aria-hidden="true"></span>
+          </button>
+          <nav id="site-navigation" class="site-navigation" role="navigation" aria-label="Primary">
+            <ul class="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a class="active" href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <button class="theme-toggle" type="button" aria-pressed="false">
+            <span class="theme-icon" aria-hidden="true">☀</span>
+            <span>Dark mode</span>
+          </button>
+        </div>
+      </header>
+
+      <main class="site-main">
+        <section class="section section-hero" aria-labelledby="portfolio-heading">
+          <div class="container">
+            <p class="eyebrow">Portfolio</p>
+            <h1 id="portfolio-heading">Selected projects built with semantic structure and responsive design.</h1>
+            <p class="lead">Every project demonstrates a balance between visual polish, accessibility, and maintainable code.</p>
+          </div>
+        </section>
+
+        <section class="section projects-section" aria-labelledby="projects-heading">
+          <div class="container">
+            <div class="section-header">
+              <h2 id="projects-heading">Featured work</h2>
+              <p>Project highlights that showcase layout systems, user-friendly interfaces, and theme-aware design.</p>
+            </div>
+            <div class="project-list">
+              <article class="project-card">
+                <span class="project-tag">Landing</span>
+                <h3>Inclusive landing page</h3>
+                <p>High contrast, clear hierarchy, and fast loading experiences for broad audiences.</p>
+              </article>
+              <article class="project-card">
+                <span class="project-tag">Portfolio</span>
+                <h3>Content-first showcase</h3>
+                <p>Readable layouts, semantic structure, and keyboard-friendly navigation across pages.</p>
+              </article>
+              <article class="project-card">
+                <span class="project-tag">Contact</span>
+                <h3>Accessible contact flow</h3>
+                <p>Forms with clear labels, ARIA live feedback, and responsive field layouts.</p>
+              </article>
+              <article class="project-card">
+                <span class="project-tag">Theme</span>
+                <h3>Light/dark portfolio</h3>
+                <p>Custom CSS variables power a polished toggle experience across devices.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" role="contentinfo">
+        <div class="container footer-grid">
+          <p>© 2026 KARTHIKA — Design with accessibility at the center.</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>

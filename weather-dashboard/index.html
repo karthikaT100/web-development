@@ -1,1 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1 class="title">Weather Dashboard</h1>
+            <p class="subtitle">Get real-time weather information</p>
+        </header>
 
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Enter city name..."
+                    autocomplete="off"
+                >
+                <button id="searchBtn" class="search-btn">
+                    <span class="btn-text">Search</span>
+                </button>
+            </div>
+            <!-- Error Message Container -->
+            <div id="errorMessage" class="error-message"></div>
+        </section>
+
+        <!-- Date and Time Display -->
+        <section class="date-time-section">
+            <div id="dateTime" class="date-time">
+                <span id="currentDate"></span>
+                <span id="currentTime"></span>
+            </div>
+        </section>
+
+        <!-- Weather Display Section -->
+        <section class="weather-section">
+            <!-- Loading Spinner -->
+            <div id="loadingSpinner" class="loading-spinner hidden">
+                <div class="spinner"></div>
+                <p>Loading weather data...</p>
+            </div>
+
+            <!-- Weather Card -->
+            <div id="weatherCard" class="weather-card hidden">
+                <!-- Weather Header with City and Temperature -->
+                <div class="weather-header">
+                    <div class="city-info">
+                        <h2 id="cityName" class="city-name"></h2>
+                        <p id="weatherDescription" class="weather-description"></p>
+                    </div>
+                    <div class="temp-section">
+                        <img id="weatherIcon" class="weather-icon" src="" alt="Weather icon">
+                        <span id="temperature" class="temperature"></span>
+                    </div>
+                </div>
+
+                <!-- Weather Details Grid -->
+                <div class="weather-details">
+                    <!-- Temperature Card -->
+                    <div class="detail-card">
+                        <div class="detail-icon">🌡️</div>
+                        <div class="detail-content">
+                            <p class="detail-label">Temperature</p>
+                            <p id="detailTemp" class="detail-value"></p>
+                        </div>
+                    </div>
+
+                    <!-- Feels Like Card -->
+                    <div class="detail-card">
+                        <div class="detail-icon">🤔</div>
+                        <div class="detail-content">
+                            <p class="detail-label">Feels Like</p>
+                            <p id="feelsLike" class="detail-value"></p>
+                        </div>
+                    </div>
+
+                    <!-- Humidity Card -->
+                    <div class="detail-card">
+                        <div class="detail-icon">💧</div>
+                        <div class="detail-content">
+                            <p class="detail-label">Humidity</p>
+                            <p id="humidity" class="detail-value"></p>
+                        </div>
+                    </div>
+
+                    <!-- Wind Speed Card -->
+                    <div class="detail-card">
+                        <div class="detail-icon">💨</div>
+                        <div class="detail-content">
+                            <p class="detail-label">Wind Speed</p>
+                            <p id="windSpeed" class="detail-value"></p>
+                        </div>
+                    </div>
+
+                    <!-- Pressure Card -->
+                    <div class="detail-card">
+                        <div class="detail-icon">🔽</div>
+                        <div class="detail-content">
+                            <p class="detail-label">Pressure</p>
+                            <p id="pressure" class="detail-value"></p>
+                        </div>
+                    </div>
+
+                    <!-- Visibility Card -->
+                    <div class="detail-card">
+                        <div class="detail-icon">👁️</div>
+                        <div class="detail-content">
+                            <p class="detail-label">Visibility</p>
+                            <p id="visibility" class="detail-value"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Info -->
+                <div class="additional-info">
+                    <div class="info-row">
+                        <span class="info-label">Sunset:</span>
+                        <span id="sunset" class="info-value"></span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Sunrise:</span>
+                        <span id="sunrise" class="info-value"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Initial Message (No search yet) -->
+            <div id="initialMessage" class="initial-message">
+                <p>🔍 Search for a city to get started!</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Last searched: <span id="lastSearched">None</span></p>
+            <p class="api-credit">Powered by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

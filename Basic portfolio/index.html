@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal portfolio showcasing projects, skills, and accessible contact options." />
+    <meta name="keywords" content="portfolio, web developer, accessible website, UX" />
+    <meta name="author" content="KARTHIKA" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Home — KARTHIKA</title>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header" role="banner">
+        <div class="container header-row">
+          <a class="brand" href="index.html">KARTHIKA</a>
+          <button class="mobile-menu-button" aria-controls="site-navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="hamburger" aria-hidden="true"></span>
+          </button>
+          <nav id="site-navigation" class="site-navigation" role="navigation" aria-label="Primary">
+            <ul class="nav-list">
+              <li><a href="index.html" aria-current="page">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main id="main-content" class="site-main" role="main">
+        <section class="hero" aria-labelledby="hero-heading">
+          <div class="container">
+            <p class="eyebrow">Design • Build • Accessible</p>
+            <h1 id="hero-heading">Simple, modern websites that work for everyone.</h1>
+            <p class="lead">I build accessible, responsive sites with clean markup and fast performance.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="portfolio.html">View work</a>
+              <a class="button button-ghost" href="contact.html">Get in touch</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="overview" aria-labelledby="overview-heading">
+          <div class="container">
+            <h2 id="overview-heading">Services</h2>
+            <div class="feature-grid">
+              <article class="feature-card">
+                <h3>Accessible UX</h3>
+                <p>Clear structure, keyboard support, and good contrast for all users.</p>
+              </article>
+              <article class="feature-card">
+                <h3>Fast & Responsive</h3>
+                <p>Lightweight layouts and optimised assets for any device.</p>
+              </article>
+              <article class="feature-card">
+                <h3>Maintainable Code</h3>
+                <p>Semantic HTML, small CSS surface area, and simple JS where needed.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" role="contentinfo">
+        <div class="container">
+          <p>© 2026 KARTHIKA — Built with accessibility and simplicity in mind.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>

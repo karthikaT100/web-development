@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Learn about my background, skills, and approach to accessible web development." />
+    <meta name="description" content="Portfolio of accessible web projects built with semantic HTML and modern UX principles." />
     <meta name="author" content="KARTHIKA" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
-    <title>About — KARTHIKA</title>
+    <title>Portfolio — KARTHIKA</title>
   </head>
   <body>
     <div class="page-shell">
@@ -21,8 +21,8 @@
           <nav id="site-navigation" class="site-navigation" role="navigation" aria-label="Primary">
             <ul class="nav-list">
               <li><a href="index.html">Home</a></li>
-              <li><a href="about.html" aria-current="page">About</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </nav>
@@ -30,40 +30,37 @@
       </header>
 
       <main id="main-content" class="site-main" role="main">
-        <section class="about-intro" aria-labelledby="about-heading">
+        <section class="portfolio-hero" aria-labelledby="portfolio-heading">
           <div class="container">
-            <h1 id="about-heading">About Me</h1>
-            <p class="lead">I build accessible, performant websites focused on clarity and usability. I pair semantic HTML with thoughtful CSS and minimal JavaScript to keep interfaces predictable and fast.</p>
+            <h1 id="portfolio-heading">Selected projects</h1>
+            <p class="lead">A few highlights demonstrating accessibility-first, performant web builds.</p>
           </div>
         </section>
 
-        <section class="skills" aria-labelledby="skills-heading">
+        <section class="project-grid" aria-labelledby="projects-heading">
           <div class="container">
-            <h2 id="skills-heading">Skills</h2>
-            <ul class="skill-list">
-              <li>Semantic HTML & ARIA</li>
-              <li>Responsive CSS & layout systems</li>
-              <li>Performance & accessibility testing</li>
-              <li>Design systems & component-driven builds</li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="workflow" aria-labelledby="workflow-heading">
-          <div class="container">
-            <h2 id="workflow-heading">How I work</h2>
-            <ol class="workflow-list">
-              <li>Plan with content and accessibility goals</li>
-              <li>Create semantic structure and responsive layout</li>
-              <li>Test and iterate with real users and tools</li>
-            </ol>
+            <h2 id="projects-heading">Featured work</h2>
+            <div class="project-list">
+              <article class="project-card">
+                <h3>Inclusive landing page</h3>
+                <p>High contrast, clear hierarchy, and fast load times for broad audiences.</p>
+              </article>
+              <article class="project-card">
+                <h3>Content-first portfolio</h3>
+                <p>Readable layouts, semantic structure, and keyboard-friendly navigation.</p>
+              </article>
+              <article class="project-card">
+                <h3>Accessible contact experience</h3>
+                <p>Forms with clear labels, ARIA-live updates, and progressive enhancement.</p>
+              </article>
+            </div>
           </div>
         </section>
       </main>
 
       <footer class="site-footer" role="contentinfo">
         <div class="container">
-          <p>© 2026 KARTHIKA — Simple, accessible web experiences.</p>
+          <p>© 2026 KARTHIKA — Design with accessibility at the center.</p>
         </div>
       </footer>
     </div>
